@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +39,11 @@ namespace HotelManagement
 
         }
 
+        private string Display_Current(double value)
+        {
+            string formatCrr = value.ToString("C", new CultureInfo("vi-VN"));
+            return formatCrr;
+        }
         private void Pay_Load(object sender, EventArgs e)
         {
             bool hasRow = this.LoadListView();
@@ -94,11 +100,13 @@ namespace HotelManagement
             {
                 txtCusId.Text = dr["CustomerID"].ToString();
                 txtCusName.Text = dr["FullName"].ToString();
-                txtRoomCost.Text = dr["RoomCost"].ToString();
-                txtTotalCost.Text = dr["TotalPay"].ToString();
+                PickerDateIN.Value = (DateTime)dr["CheckInDate"];
+                PickerDateOUT.Value = (DateTime)dr["CheckOutDate"];
+                txtRoomCost.Text = Display_Current(Convert.ToDouble(dr["RoomCost"]));
+                txtTotalCost.Text = Display_Current(Convert.ToDouble(dr["TotalPay"]));
                 if (hasServices)
                 {
-                    txtServiceCost.Text = dr["ServiceCost"].ToString();
+                    txtServiceCost.Text = Display_Current(Convert.ToDouble(dr["ServiceCost"]));
                 }
             }
             conn.Close();
@@ -127,6 +135,11 @@ namespace HotelManagement
         }
 
         private void listViewService_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
 
         }

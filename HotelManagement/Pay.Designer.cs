@@ -28,32 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtCusName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCusId = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtRoomCost = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtServiceCost = new Guna.UI2.WinForms.Guna2TextBox();
             this.listViewService = new System.Windows.Forms.ListView();
             this.txtTotalCost = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PickerDateIN = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.PickerDateOUT = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnPaid = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(34, 59);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(122, 22);
-            this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "Tên Khách Hàng";
             // 
             // txtCusName
             // 
@@ -95,33 +86,6 @@
             this.txtCusId.Size = new System.Drawing.Size(286, 36);
             this.txtCusId.TabIndex = 3;
             // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(34, 127);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(99, 22);
-            this.guna2HtmlLabel2.TabIndex = 2;
-            this.guna2HtmlLabel2.Text = "CMND/CCCD";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(34, 202);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(68, 22);
-            this.guna2HtmlLabel3.TabIndex = 4;
-            this.guna2HtmlLabel3.Text = "Ngày vào";
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(34, 271);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(57, 22);
-            this.guna2HtmlLabel4.TabIndex = 6;
-            this.guna2HtmlLabel4.Text = "Ngày ra";
-            // 
             // txtRoomCost
             // 
             this.txtRoomCost.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -141,24 +105,6 @@
             this.txtRoomCost.SelectedText = "";
             this.txtRoomCost.Size = new System.Drawing.Size(191, 36);
             this.txtRoomCost.TabIndex = 9;
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(34, 337);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(83, 22);
-            this.guna2HtmlLabel5.TabIndex = 8;
-            this.guna2HtmlLabel5.Text = "Tiền Phòng";
-            // 
-            // guna2HtmlLabel6
-            // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(485, 337);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(93, 22);
-            this.guna2HtmlLabel6.TabIndex = 10;
-            this.guna2HtmlLabel6.Text = "Tiền Dịch Vụ";
             // 
             // txtServiceCost
             // 
@@ -212,15 +158,6 @@
             this.txtTotalCost.TabIndex = 14;
             this.txtTotalCost.TextChanged += new System.EventHandler(this.guna2TextBox7_TextChanged);
             // 
-            // guna2HtmlLabel7
-            // 
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(34, 405);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(82, 22);
-            this.guna2HtmlLabel7.TabIndex = 13;
-            this.guna2HtmlLabel7.Text = "Thành Tiền";
-            // 
             // PickerDateIN
             // 
             this.PickerDateIN.Checked = true;
@@ -264,27 +201,90 @@
             this.btnPaid.Text = "Đã Thanh Toán";
             this.btnPaid.Click += new System.EventHandler(this.btnPaid_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(30, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 20);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Tên Khách Hàng";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(30, 129);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 20);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "CMND/CCCD";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(481, 339);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 20);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Tiền Dịch Vụ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(30, 339);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 20);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Tiền Phòng";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(30, 273);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 20);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "Ngày Ra";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(30, 204);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(78, 20);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "Ngày Vào";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(30, 407);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(88, 20);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "Thành Tiền";
+            // 
             // Pay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnPaid);
             this.Controls.Add(this.PickerDateOUT);
             this.Controls.Add(this.PickerDateIN);
             this.Controls.Add(this.txtTotalCost);
-            this.Controls.Add(this.guna2HtmlLabel7);
             this.Controls.Add(this.listViewService);
             this.Controls.Add(this.txtServiceCost);
-            this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.txtRoomCost);
-            this.Controls.Add(this.guna2HtmlLabel5);
-            this.Controls.Add(this.guna2HtmlLabel4);
-            this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.txtCusId);
-            this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.txtCusName);
-            this.Controls.Add(this.guna2HtmlLabel1);
             this.Name = "Pay";
             this.Text = "Pay";
             this.TopMost = true;
@@ -295,22 +295,21 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2TextBox txtCusName;
         private Guna.UI2.WinForms.Guna2TextBox txtCusId;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2TextBox txtRoomCost;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2TextBox txtServiceCost;
         private System.Windows.Forms.ListView listViewService;
         private Guna.UI2.WinForms.Guna2TextBox txtTotalCost;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2DateTimePicker PickerDateIN;
         private Guna.UI2.WinForms.Guna2DateTimePicker PickerDateOUT;
         private Guna.UI2.WinForms.Guna2Button btnPaid;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }

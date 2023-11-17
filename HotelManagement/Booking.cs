@@ -175,7 +175,7 @@ namespace HotelManagement
                         int resultHis = cmdHis.ExecuteNonQuery();
                         if (resultHis > 0)
                         {
-                            MessageBox.Show("thành công");
+                            MessageBox.Show("Nhận phòng thành công");
                             query = $"SELECT BookingID FROM Bookings where RoomID = {RoomID}";
                             cmd = new SqlCommand(query, conn);
                             dr = cmd.ExecuteReader();
@@ -206,6 +206,11 @@ namespace HotelManagement
         {
             Pay pay = new Pay(BookingID, RoomID, this.frmDash);
             pay.Show();
+        }
+
+        private void outDate_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

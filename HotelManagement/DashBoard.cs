@@ -51,23 +51,29 @@ namespace HotelManagement
                 {
                     ImageSize = new Size(150, 150)
                 };
-                imgLst.Images.Add(Image.FromFile(@"D:\HotelManagement\HotelManagement\HotelManagement\room-1.png"));
+                string appDirectory = Path.GetDirectoryName(Application.ExecutablePath);
+                string projectPath = "";
+                if (appDirectory != null)
+                {
+                    projectPath = Path.GetDirectoryName(Path.GetDirectoryName(appDirectory));
+
+                }
+                string imagePath = Path.Combine(projectPath, "room-1.png");
+                imgLst.Images.Add(Image.FromFile(imagePath));
 
                 ListViewItem item = new ListViewItem
                 {
                     Text = $"Phòng: {room.RoomNumber}",
                     Font = new Font("Arial", 14, FontStyle.Regular),
                     BackColor = room.Availability ? Color.Green : Color.Red,
-                    ImageIndex = 0 // Set the index of the image in your image list
+                    ImageIndex = 0
                 };
 
-                // Add subitems if needed
                 item.SubItems.Add(room.RoomID);
                 item.SubItems.Add($"Loại Phòng: {room.RoomTypeName}");
                 item.SubItems.Add($"Giá: {room.PricePerNight}");
                 item.SubItems.Add($"Trạng thái: {{room.Availability ? \"Trống\" : \"Đang sử dụng\"}}");
 
-                // Add the item to the ListView
                 listView1.LargeImageList = imgLst;
                 listView1.Items.Add(item);
 
@@ -80,10 +86,6 @@ namespace HotelManagement
             MessageBox.Show("Clicked");
             throw new NotImplementedException();
         }
-
-        //private void BookingDetail(object sender, EventArgs e)
-        //{
-        //    MessageBox.Show("Clicked");        }
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -92,10 +94,7 @@ namespace HotelManagement
 
         private void DashBoard_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'qLKSDataSet.Rooms' table. You can move, or remove it, as needed.
-            //this.roomsTableAdapter.Fill(this.qLKSDataSet.Rooms);
             GetData();
-
         }
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -132,12 +131,13 @@ namespace HotelManagement
                 string query = $"select BookingID from Bookings where RoomID = {RoomId}";
                 cmd = new SqlCommand(query,conn);
                 dr = cmd.ExecuteReader();
+                string getID = "";
                 if(dr.Read())
                 {
-                    string getID = dr["BookingID"].ToString();
-                    Booking booking = new Booking(RoomId, getID, this);
-                    booking.Show();
+                    getID = dr["BookingID"].ToString();
                 }
+                Booking booking = new Booking(RoomId, getID, this);
+                booking.Show();
                 conn.Close();
             }
         }

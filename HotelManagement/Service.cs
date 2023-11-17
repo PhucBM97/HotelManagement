@@ -86,8 +86,6 @@ namespace HotelManagement
 
         private void Service_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'qLKSDataSet1.Services' table. You can move, or remove it, as needed.
-            //this.servicesTableAdapter.Fill(this.qLKSDataSet1.Services);
             GetData();
             LoadComboBox();
         }
@@ -105,11 +103,11 @@ namespace HotelManagement
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             string inputText = txtQuantity.Text;
-            int Quantity = Convert.ToInt32(inputText);
-            double priceService = 0;
 
             if (int.TryParse(inputText, out _))
             {
+                int Quantity = Convert.ToInt32(inputText);
+                double priceService = 0;
                 conn.Open();
                 string queryGetService = $"select * from Services where ServiceID = {comboBoxSrv.SelectedValue.ToString()}";
                 cmd = new SqlCommand(queryGetService, conn);

@@ -30,25 +30,25 @@
         {
             this.lbRoomNumber = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbType = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbPrice = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnCheckIn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnCheckout = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtCusName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCusID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbRoomType = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.inDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.outDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnSrv = new Guna.UI2.WinForms.Guna2Button();
             this.btnPay = new Guna.UI2.WinForms.Guna2Button();
             this.txtBookingID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbRoomNumber
@@ -56,7 +56,7 @@
             this.lbRoomNumber.BackColor = System.Drawing.Color.Transparent;
             this.lbRoomNumber.Location = new System.Drawing.Point(72, 12);
             this.lbRoomNumber.Name = "lbRoomNumber";
-            this.lbRoomNumber.Size = new System.Drawing.Size(0, 0);
+            this.lbRoomNumber.Size = new System.Drawing.Size(3, 2);
             this.lbRoomNumber.TabIndex = 0;
             this.lbRoomNumber.Text = null;
             // 
@@ -70,21 +70,12 @@
             this.guna2HtmlLabel2.Text = null;
             this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
             // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(72, 177);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(68, 22);
-            this.guna2HtmlLabel3.TabIndex = 2;
-            this.guna2HtmlLabel3.Text = "Ngày vào";
-            // 
             // lbType
             // 
             this.lbType.BackColor = System.Drawing.Color.Transparent;
             this.lbType.Location = new System.Drawing.Point(690, 12);
             this.lbType.Name = "lbType";
-            this.lbType.Size = new System.Drawing.Size(0, 0);
+            this.lbType.Size = new System.Drawing.Size(3, 2);
             this.lbType.TabIndex = 3;
             this.lbType.Text = null;
             // 
@@ -93,7 +84,7 @@
             this.lbPrice.BackColor = System.Drawing.Color.Transparent;
             this.lbPrice.Location = new System.Drawing.Point(489, 12);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(0, 0);
+            this.lbPrice.Size = new System.Drawing.Size(3, 2);
             this.lbPrice.TabIndex = 4;
             this.lbPrice.Text = null;
             // 
@@ -112,15 +103,6 @@
             this.btnCheckIn.Text = "Nhận phòng";
             this.btnCheckIn.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // guna2HtmlLabel7
-            // 
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(72, 72);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(122, 22);
-            this.guna2HtmlLabel7.TabIndex = 7;
-            this.guna2HtmlLabel7.Text = "Tên Khách Hàng";
-            // 
             // btnCheckout
             // 
             this.btnCheckout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -135,15 +117,6 @@
             this.btnCheckout.TabIndex = 8;
             this.btnCheckout.Text = "Checkout";
             this.btnCheckout.Click += new System.EventHandler(this.guna2Button2_Click);
-            // 
-            // guna2HtmlLabel6
-            // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(72, 243);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(57, 22);
-            this.guna2HtmlLabel6.TabIndex = 9;
-            this.guna2HtmlLabel6.Text = "Ngày ra";
             // 
             // txtCusName
             // 
@@ -185,21 +158,12 @@
             this.txtCusID.Size = new System.Drawing.Size(491, 32);
             this.txtCusID.TabIndex = 16;
             // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(72, 121);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(99, 22);
-            this.guna2HtmlLabel1.TabIndex = 15;
-            this.guna2HtmlLabel1.Text = "CMND/CCCD";
-            // 
             // lbRoomType
             // 
             this.lbRoomType.BackColor = System.Drawing.Color.Transparent;
             this.lbRoomType.Location = new System.Drawing.Point(286, 12);
             this.lbRoomType.Name = "lbRoomType";
-            this.lbRoomType.Size = new System.Drawing.Size(0, 0);
+            this.lbRoomType.Size = new System.Drawing.Size(3, 2);
             this.lbRoomType.TabIndex = 17;
             this.lbRoomType.Text = null;
             // 
@@ -230,33 +194,7 @@
             this.outDate.Size = new System.Drawing.Size(200, 36);
             this.outDate.TabIndex = 19;
             this.outDate.Value = new System.DateTime(2023, 11, 16, 12, 20, 17, 995);
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(12, 12);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(49, 22);
-            this.guna2HtmlLabel4.TabIndex = 20;
-            this.guna2HtmlLabel4.Text = "Phòng";
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(179, 12);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(83, 22);
-            this.guna2HtmlLabel5.TabIndex = 21;
-            this.guna2HtmlLabel5.Text = "Loại Phòng";
-            // 
-            // guna2HtmlLabel8
-            // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(410, 12);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(58, 22);
-            this.guna2HtmlLabel8.TabIndex = 22;
-            this.guna2HtmlLabel8.Text = "Đơn giá";
+            this.outDate.ValueChanged += new System.EventHandler(this.outDate_ValueChanged);
             // 
             // btnSrv
             // 
@@ -308,30 +246,93 @@
             this.txtBookingID.Size = new System.Drawing.Size(60, 50);
             this.txtBookingID.TabIndex = 25;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 20);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Phòng";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(188, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 20);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Loại Phòng";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(398, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 20);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Đơn Giá";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(74, 255);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(70, 20);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Ngày Ra";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(74, 193);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(78, 20);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Ngày Vào";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(74, 121);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(105, 20);
+            this.label6.TabIndex = 31;
+            this.label6.Text = "CMND/CCCD";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(68, 72);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(128, 20);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "Tên Khách Hàng";
+            // 
             // Booking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBookingID);
             this.Controls.Add(this.btnPay);
             this.Controls.Add(this.btnSrv);
-            this.Controls.Add(this.guna2HtmlLabel8);
-            this.Controls.Add(this.guna2HtmlLabel5);
-            this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.outDate);
             this.Controls.Add(this.inDate);
             this.Controls.Add(this.lbRoomType);
             this.Controls.Add(this.txtCusID);
-            this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.txtCusName);
-            this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.btnCheckout);
-            this.Controls.Add(this.guna2HtmlLabel7);
             this.Controls.Add(this.btnCheckIn);
             this.Controls.Add(this.lbPrice);
             this.Controls.Add(this.lbType);
-            this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.lbRoomNumber);
             this.Name = "Booking";
@@ -347,24 +348,24 @@
 
         private Guna.UI2.WinForms.Guna2HtmlLabel lbRoomNumber;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbType;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbPrice;
         private Guna.UI2.WinForms.Guna2Button btnCheckIn;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2Button btnCheckout;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2TextBox txtCusName;
         private Guna.UI2.WinForms.Guna2TextBox txtCusID;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbRoomType;
         private Guna.UI2.WinForms.Guna2DateTimePicker inDate;
         private Guna.UI2.WinForms.Guna2DateTimePicker outDate;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2Button btnSrv;
         private Guna.UI2.WinForms.Guna2Button btnPay;
         private Guna.UI2.WinForms.Guna2TextBox txtBookingID;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
