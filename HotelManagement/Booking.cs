@@ -67,6 +67,10 @@ namespace HotelManagement
             }
             conn.Close();
             CheckAvailable(isAvailable);
+            lbPrice.Font = new Font(Font, FontStyle.Bold);
+            lbRoomNumber.Font = new Font(Font, FontStyle.Bold);
+            lbRoomType.Font = new Font(Font, FontStyle.Bold);
+            lbType.Font = new Font(Font, FontStyle.Bold);
 
         }
         private void CheckAvailable(bool isAvailable)
